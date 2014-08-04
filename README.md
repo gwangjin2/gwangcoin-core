@@ -7,13 +7,14 @@ Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
 Copyright (c) 2014-     Suwoncoin Developers
 
-What is Suwoncoin?
+수원코인은 ?
 ----------------
 
-Suwoncoin is a lite version of Litecoin using scrypt as a proof-of-work algorithm.
- - 1 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~1000 million total coins
+수원코인(Suwoncoin)은 수원시민화폐를 위한 기반시스템으로 라이트코인(Litecoin)기반으로 만들어 졌으며 주요특징으로
+
+  -  블록생성시간: 1분
+  -  마이닝 없음(초기 블럭에서 1억코인 생성)
+  -  화폐총량: 1억 코인
 
 The rest is the same as Bitcoin.
  - 50 coins per block
@@ -34,7 +35,7 @@ Development process
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Litecoin
+If it is a simple/trivial/non-controversial change, then one of the Suwoncoin
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
