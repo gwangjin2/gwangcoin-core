@@ -1,4 +1,4 @@
-Litecoin integration/staging tree
+Suwoncoin integration/staging tree
 ================================
 
 http://www.suwoncoin.org
