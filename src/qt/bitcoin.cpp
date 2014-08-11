@@ -157,9 +157,9 @@ int main(int argc, char *argv[])
     QApplication::setOrganizationName("Litecoin");
     QApplication::setOrganizationDomain("litecoin.org");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
-        QApplication::setApplicationName("Litecoin-Qt-testnet");
+        QApplication::setApplicationName("Suwoncoin-Qt-testnet");
     else
-        QApplication::setApplicationName("Litecoin-Qt");
+        QApplication::setApplicationName("Suwoncoin-Qt");
 
     // ... then GUI settings:
     OptionsModel optionsModel;
