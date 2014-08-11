@@ -36,7 +36,7 @@
           <string>Automatically start Litecoin after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start Litecoin on system login</string>
+          <string>&amp;Start Suwoncoin on system login</string>
          </property>
         </widget>
        </item>
@@ -510,6 +510,7 @@
    <class>BitcoinAmountField</class>
    <extends>QSpinBox</extends>
    <header>bitcoinamountfield.h</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>QValueComboBox</class>
