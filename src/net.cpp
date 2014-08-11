@@ -1112,7 +1112,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Litecoin " + FormatFullVersion();
+        string strDesc = "Suwoncoin " + FormatFullVersion();
 
         try {
             loop {
@@ -1194,19 +1194,11 @@ void MapPort(bool)
 static const char *strMainNetDNSSeed[][2] = {
     {"suwoncoin.org", "dnsseed1.suwoncoin.org"},
     {"suwoncoin.org", "dnsseed2.suwoncoin.org"},
-//    {"litecointools.com", "dnsseed.litecointools.com"},
-//    {"litecoinpool.org", "dnsseed.litecoinpool.org"},
-//    {"xurious.com", "dnsseed.ltc.xurious.com"},
-//    {"koin-project.com", "dnsseed.koin-project.com"},
-//    {"weminemnc.com", "dnsseed.weminemnc.com"},
     {NULL, NULL}
 };
 
 static const char *strTestNetDNSSeed[][2] = {
     {"suwoncoin.org", "dnsseed3.suwoncoin.org"},
-//    {"litecointools.com", "testnet-seed.litecointools.com"},
-//    {"xurious.com", "testnet-seed.ltc.xurious.com"},
-//    {"wemine-testnet.com", "dnsseed.wemine-testnet.com"},
     {NULL, NULL}
 };
 
@@ -1762,7 +1754,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Litecoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. Suwoncoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());
