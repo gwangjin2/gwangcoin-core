@@ -1068,7 +1068,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <source>Litecoin-Qt</source>
+        <source>Suwoncoin-Qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1862,7 +1862,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show the Litecoin-Qt help message to get a list with possible Litecoin command-line options.</source>
+        <source>Show the Suwoncoin-Qt help message to get a list with possible Litecoin command-line options.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
