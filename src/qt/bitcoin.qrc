@@ -50,16 +50,6 @@
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
     </qresource>
     <qresource prefix="/translations">
-        <file alias="bs">locale/bitcoin_bs.ts</file>
-        <file alias="ca">locale/bitcoin_ca.ts</file>
-        <file alias="cy">locale/bitcoin_cy.ts</file>
-        <file alias="eo">locale/bitcoin_eo.ts</file>
-        <file alias="gu_IN">locale/bitcoin_gu_IN.ts</file>
-        <file alias="hi_IN">locale/bitcoin_hi_IN.ts</file>
-        <file alias="ja">locale/bitcoin_ja.ts</file>
         <file alias="ko_KR">locale/bitcoin_ko_KR.ts</file>
-        <file alias="la">locale/bitcoin_la.ts</file>
-        <file alias="lv_LV">locale/bitcoin_lv_LV.ts</file>
-        <file alias="th_TH">locale/bitcoin_th_TH.ts</file>
     </qresource>
 </RCC>

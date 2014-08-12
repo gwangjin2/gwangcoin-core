@@ -1084,10 +1084,11 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 50 * COIN;
+//    int64 nSubsidy = 50 * COIN;
+    int64 nSubsidy = MAX_MONEY; //첫 마이닝에서 총액발행(1억수원)
 
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 840000); // Suwoncoin: 840k blocks in ~4 years
+    // Subsidy is cut in half every MAX_COIN blocks, which will occur approximately every 4 years
+    nSubsidy >>= (nHeight / MAX_SUWON); // Suwoncoin: MAX_COIN blocks in ~4 years
 
     return nSubsidy + nFees;
 }
