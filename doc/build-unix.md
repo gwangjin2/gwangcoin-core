@@ -51,8 +51,35 @@ Licenses of statically linked libraries:
 -  Boost         1.37
 -  miniupnpc     1.6
 
+
+
+Dependency Build Instructions: Ubuntu 10.14 for aws.amazone
+----------------------------------------------
+#Build requirements:
+
+sudo apt-get install build-essential
+
+# clang/clang++ package
+sudo apt-get install clang
+
+sudo apt-get install libssl-dev
+sudo apt-get install libboost-all-dev
+
+# db4.8 packages are available
+sudo add-apt-repository ppa:bitcoin/bitcoin
+
+sudo apt-get install libdb4.8-dev
+sudo apt-get install libdb4.8++-dev
+
+sudo apt-get install libminiupnpc-dev 
+
+
+
+
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
+
+
 Build requirements:
 
 	sudo apt-get install build-essential
