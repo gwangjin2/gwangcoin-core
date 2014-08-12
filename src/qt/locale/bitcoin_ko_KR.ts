@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ko_KR">
-<defaultcodec>UTF-8</defaultcodec>
+<TS version="2.1" language="ko_KR">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -40,18 +39,22 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
     </message>
     <message>
         <source>About Litecoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Litecoin&lt;/b&gt; version</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">라이트코인 소개</translation>
     </message>
     <message>
         <source>The Bitcoin developers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">비트코인코어 개발자들</translation>
     </message>
     <message>
         <source>2011-%1 The Litecoin developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Suwoncoin&lt;/span&gt; version&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>2014-%1 The Suwoncoin developers</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -59,7 +62,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
     <name>AddressBookPage</name>
     <message>
         <source>Double-click to edit address or label</source>
-        <translation>지갑 주소나 제목을 수정하려면 더블클릭하세요.</translation>
+        <translation type="unfinished">지갑 주소나 제목을 수정하려면 더블클릭하세요</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -151,19 +154,20 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
     </message>
     <message>
         <source>Address Book</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>수원코인 계좌 목록</translatorcomment>
+        <translation type="unfinished">계좌목록</translation>
     </message>
     <message>
         <source>&amp;New Address</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">새 계좌열기(&amp;N)</translation>
     </message>
     <message>
         <source>Show &amp;QR Code</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">QR 코드 보여주기(&amp;Q)</translation>
     </message>
     <message>
         <source>Sign a message to prove you own a Litecoin address</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">여러분의 수원코인 주소를 증명하려면 메시지 서명하십시오</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -171,42 +175,42 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
     </message>
     <message>
         <source>Verify a message to ensure it was signed with a specified Litecoin address</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">수원코인 주소의 전자 서명 확인을 위해 첨부된 메시지가 있을 경우 이를 검증할 수 있습니다</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
         <translation type="unfinished">메시지 검증(&amp;V)</translation>
     </message>
     <message>
-        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>These are your Litecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Send &amp;Coins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">코인들 보내기(&amp;S)</translation>
     </message>
     <message>
         <source>Export Address Book Data</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">주소 목록 내보내기</translation>
     </message>
     <message>
         <source>Error exporting</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">내보내기 오류</translation>
     </message>
     <message>
         <source>Could not write to file %1.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 파일에 기록할 수 없음.</translation>
+    </message>
+    <message>
+        <source>These are your Suwoncoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">이것이 수원코인 금액을 보내는 주소이다. 항상 코인을 보내기전에 잔고와 받는 주소를 확인하시오.</translation>
+    </message>
+    <message>
+        <source>These are your Suwoncoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation type="unfinished">수코인을 받을 수 있는 계좌 주소입니다. 매 거래마다 새로운 주소 사용을 권장합니다. </translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation>표</translation>
+        <translation type="unfinished">표식</translation>
     </message>
     <message>
         <source>Address</source>
@@ -214,7 +218,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(표 없음)</translation>
+        <translation>(표식 없음)</translation>
     </message>
 </context>
 <context>
@@ -265,7 +269,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
     </message>
     <message>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>지갑의 예전 암호와 새로운 암호를 입력</translation>
+        <translation type="unfinished">지갑의 예전 암호와 새로운 암호를 입력.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
@@ -277,7 +281,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>지갑 암호화를 허용하시겠습니까?</translation>
+        <translation type="unfinished">지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -324,11 +328,11 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
         <translation>지갑 비밀번호가 성공적으로 변경되었습니다</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SUWONCOINS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <source>Suwoncoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your suwoncoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -645,18 +649,6 @@ Address: %4
         <translation type="obsolete">치명적인 오류가 있습니다. 비트코인을 더이상 안전하게 진행할 수 없어 빠져나갑니다.</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Litecoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Send coins to a Litecoin address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Show the list of addresses for receiving payments</source>
         <translation type="unfinished"></translation>
     </message>
@@ -667,36 +659,6 @@ Address: %4
     <message>
         <source>Edit the list of stored addresses and labels</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&amp;About Litecoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Show information about Litecoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Litecoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Litecoin client</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-        </translation>
     </message>
     <message>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
@@ -711,7 +673,49 @@ Address: %4
         <translation type="unfinished">URI 조작중</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
+        <source>A fatal error occurred. Suwoncoin can no longer continue safely and will quit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Suwoncoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send coins to a Suwoncoin address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;About Suwoncoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show information about Suwoncoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Modify configuration options for Suwoncoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sign messages with your Suwoncoin addresses to prove you own them</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Suwoncoin addresses</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Suwoncoin client</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Suwoncoin network</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>URI can not be parsed! This can be caused by an invalid Suwoncoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1038,7 +1042,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Litecoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Suwoncoin address.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1424,10 +1428,6 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Start Litecoin on system login</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Spend unconfirmed change  (experts only)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1476,7 +1476,11 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished">경고</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Litecoin.</source>
+        <source>&amp;Start Suwoncoin on system login</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This setting will take effect after restarting Suwoncoin.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1610,7 +1614,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="obsolete">네트워크 요청 애러</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
+        <source>Cannot start suwoncoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1842,19 +1846,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="obsolete">% 1시 %2 분</translation>
     </message>
     <message>
-        <source>Litecoin - Debug window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Litecoin Core</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>On testnet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Open the Litecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1862,15 +1854,27 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show the Suwoncoin-Qt help message to get a list with possible Litecoin command-line options.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Show</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Welcome to the Litecoin RPC console.</source>
+        <source>Suwoncoin - Debug window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Suwoncoin Core</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open the Suwoncoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show the Suwoncoin-Qt help message to get a list with possible Suwoncoin command-line options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Welcome to the Suwoncoin RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2242,10 +2246,6 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2263,6 +2263,10 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter a Suwoncoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2349,7 +2353,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Suwoncoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2527,11 +2531,11 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Suwoncoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter Litecoin signature</source>
+        <source>Enter Suwoncoin signature</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2555,6 +2559,10 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <source>The Litecoin developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Suwoncoin developers</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3741,25 +3749,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 파일이 없으면 소유자 읽기 전용 파일 권한으로 만들어야 합니다.</translation>
     </message>
     <message>
-        <source>%s, you must set a rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=litecoinrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo.com
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. Litecoin is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3779,27 +3769,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Litecoin is probably already running.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Litecoin will not work properly.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Litecoin version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Connect through socks proxy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Litecoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3831,15 +3805,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>SSL options: (see the Litecoin Wiki for SSL setup instructions)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Send command to -server or litecoind</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3855,19 +3821,61 @@ for example: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Specify configuration file (default: litecoin.conf)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: litecoind.pid)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Litecoin to complete</source>
+        <source>%s, you must set a rpcpassword in the configuration file:
+%s
+It is recommended you use the following random password:
+rpcuser=suwoncoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+It is also recommended to set alertnotify so you are notified of problems;
+for example: alertnotify=echo %%s | mail -s &quot;Suwoncoin Alert&quot; admin@foo.com
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Suwoncoin is probably already running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. Suwoncoin is probably already running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Suwoncoin will not work properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Suwoncoin version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Suwoncoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SSL options: (see the Suwoncoin Wiki for SSL setup instructions)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send command to -server or suwoncoind</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: suwoncoin.conf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: suwoncoind.pid)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart Suwoncoin to complete</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
