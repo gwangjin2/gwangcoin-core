@@ -195,14 +195,6 @@ bool AbortNode(const std::string &msg);
 
 
 
-
-
-
-
-
-
-
-
 bool GetWalletFile(CWallet* pwallet, std::string &strWalletFileOut);
 
 struct CDiskBlockPos
