@@ -1092,8 +1092,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 3.5 * 24 * 60 * 60; // Suwoncoin: 3.5 days
-static const int64 nTargetSpacing = 2.5 * 60; // Suwoncoin: 2.5 minutes
+static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Suwoncoin: 1 days
+static const int64 nTargetSpacing = 1 * 60; // Suwoncoin: 1 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -1319,15 +1319,6 @@ void CBlockHeader::UpdateTime(const CBlockIndex* pindexPrev)
 }
 
 
-
-
-
-
-
-
-
-
-
 const CTxOut &CTransaction::GetOutputFor(const CTxIn& input, CCoinsViewCache& view)
 {
     const CCoins &coins = view.GetCoins(input.prevout.hash);
@@ -1492,8 +1483,6 @@ bool CTransaction::CheckInputs(CValidationState &state, CCoinsViewCache &inputs,
 
     return true;
 }
-
-
 
 
 bool CBlock::DisconnectBlock(CValidationState &state, CBlockIndex *pindex, CCoinsViewCache &view, bool *pfClean)
