@@ -1082,12 +1082,21 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
+
+static const int64 nGenesisBlockCoin = 100000000 * COIN;
+
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 10000000 * COIN;
+ 
+    if (nHeight == 0)
+    {
+        return nGenesisBlockCoin;
+    }
 
-    // Subsidy is cut in half every 1000000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 1000000); // Suwoncoin: 1000k blocks in ~4 years
+    int64 nSubsidy = 50 * COIN;
+
+    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
+    nSubsidy >>= (nHeight / 840000); // Suwoncoin: 840k blocks in ~4 years
 
     return nSubsidy + nFees;
 }
@@ -4094,15 +4103,6 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
     }
     return true;
 }
-
-
-
-
-
-
-
-
-
 
 
 
