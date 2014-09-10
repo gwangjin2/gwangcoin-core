@@ -15,12 +15,12 @@ import random
 from binascii import b2a_hex
 
 # key types
-PUBKEY_ADDRESS = 48
+PUBKEY_ADDRESS = 125 #48 # suwoncoin -> start with 's'
 SCRIPT_ADDRESS = 5
 PUBKEY_ADDRESS_TEST = 111
 SCRIPT_ADDRESS_TEST = 196
-PRIVKEY = 176
-PRIVKEY_TEST = 239
+PRIVKEY = PUBKEY_ADDRESS + 128
+PRIVKEY_TEST = PUBKEY_ADDRESS_TEST + 128
 
 metadata_keys = ['isPrivkey', 'isTestnet', 'addrType', 'isCompressed']
 # templates for valid sequences
