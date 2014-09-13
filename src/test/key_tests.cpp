@@ -10,14 +10,67 @@
 
 using namespace std;
 
-static const string strSecret1     ("6uu5bsZLA2Lm6yCxgwxDxHyZmhYeqBMLQT83Fyq738YhYucQPQf");
-static const string strSecret2     ("6vZDRwYgTNidWzmKs9x8QzQGeWCqbdUtNRpEKZMaP67ZSn8XMjb");
-static const string strSecret1C    ("T6UsJv9hYpvDfM5noKYkB3vfeHxhyegkeWJ4y7qKeQJuyXMK11XX");
-static const string strSecret2C    ("T9PBs5kq9QrkBPxeGNWKitMi4XuFVr25jaXTnuopLVZxCUAJbixA");
-static const CBitcoinAddress addr1 ("LWaFezDtucfCA4xcVEfs3R3xfgGWjSwcZr");
-static const CBitcoinAddress addr2 ("LXwHM6mRd432EzLJYwuKQMPhTzrgr7ur9K");
-static const CBitcoinAddress addr1C("LZWK8h7C166niP6GmpUmiGrvn4oxPqQgFV");
-static const CBitcoinAddress addr2C("Lgb6tdqmdW3n5E12johSuEAqRMt4kAr7yu");
+
+
+/*
+ * make from suwoncoin/contrib/pycoin
+
+~/Projects/suwoncoin/contrib/pycoin $ ku -nSWC 1
+
+input                          : 1
+network                        : Suwoncoin mainnet
+netcode                        : SWC
+secret exponent                : 1
+ hex                           : 1
+wif                            : eRhXeqAbHtnnXvMLvArwR2wDxvq3CsbvBmbyZvexE4g5FFMGBQju
+ uncompressed                  : 9UoLdfZ5be7J7Z2SMf2oK8gvgrogUACY5hvEiu2oVnh7rYK5xSM
+public pair x                  : 55066263022277343669578718895168534326250603453777594175500187360389116729240
+public pair y                  : 32670510020758816978083085130507043184471273380659243275938904335757337482424
+ x as hex                      : 79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
+ y as hex                      : 483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8
+y parity                       : even
+key pair as sec                : 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
+ uncompressed                  : 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798\
+                                   483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8
+hash160                        : 751e76e8199196d454941c45d1b3a323f1433bd6
+ uncompressed                  : 91b24bf9f5288532960ac687abb035127b1d28a5
+Suwoncoin address              : sUvfdj9d7cnHNVcpHDkASXSKoAeTsKojEm
+Suwoncoin address uncompressed : sXXmeff54XxS9YfnPVmxNu5PPojcrHpixP
+
+
+~/Projects/suwoncoin/contrib/pycoin $ ku -nSWC 2
+input                          : 2
+network                        : Suwoncoin mainnet
+netcode                        : SWC
+secret exponent                : 2
+ hex                           : 2
+wif                            : eRhXeqAbHtnnXvMLvArwR2wDxvq3CsbvBmbyZvexE4g5FkG9gW1b
+ uncompressed                  : 9UoLdfZ5be7J7Z2SMf2oK8gvgrogUACY5hvEiu2oVnh7rcUUCbZ
+public pair x                  : 89565891926547004231252920425935692360644145829622209833684329913297188986597
+public pair y                  : 12158399299693830322967808612713398636155367887041628176798871954788371653930
+ x as hex                      : c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5
+ y as hex                      : 1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a
+y parity                       : even
+key pair as sec                : 02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5
+ uncompressed                  : 04c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3ca7abac09b95c709ee5\
+                                   1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a
+hash160                        : 06afd46bcdfd22ef94ac122aa11f241244a37ecc
+ uncompressed                  : d6c8e828c1eca1bba065e1b83e1dc2a36e387a42
+Suwoncoin address              : sJrkmbH9318FAcZPw2DatoBUd3qvCt6D55
+Suwoncoin address uncompressed : sdq5Mt131X81FgRgRj8gHihsw7fMS1MFu8
+
+*/
+
+static const string strSecret1C    ("eRhXeqAbHtnnXvMLvArwR2wDxvq3CsbvBmbyZvexE4g5FFMGBQju");
+static const string strSecret1     ("9UoLdfZ5be7J7Z2SMf2oK8gvgrogUACY5hvEiu2oVnh7rYK5xSM");
+static const string strSecret2C    ("eRhXeqAbHtnnXvMLvArwR2wDxvq3CsbvBmbyZvexE4g5FkG9gW1b");
+static const string strSecret2     ("9UoLdfZ5be7J7Z2SMf2oK8gvgrogUACY5hvEiu2oVnh7rcUUCbZ");
+
+static const CBitcoinAddress addr1C("sUvfdj9d7cnHNVcpHDkASXSKoAeTsKojEm");
+static const CBitcoinAddress addr1 ("sXXmeff54XxS9YfnPVmxNu5PPojcrHpixP");
+
+static const CBitcoinAddress addr2C("sJrkmbH9318FAcZPw2DatoBUd3qvCt6D55");
+static const CBitcoinAddress addr2 ("sdq5Mt131X81FgRgRj8gHihsw7fMS1MFu8");
 
 
 static const string strAddressBad("LRjyUS2uuieEPkhZNdQz8hE5YycxVEqSXA");
