@@ -123,6 +123,7 @@ You have multiple ways to disable it, my way is:
 - open checkpoints.cpp
 - there are 3 functions, comment out the normal return, and make them return either true, 0, or null, like this:
 Quote
+```cpp
 	bool CheckBlock(int nHeight, const uint256& hash)
 	{
 		if (fTestNet) return true; // Testnet has no checkpoints
@@ -154,7 +155,7 @@ Quote
 		}
 		return NULL;
 	}
-
+```
 Now this is disabled. Once everything works, you can premine 50 blocks, and extract some hashes and put them in the checkpoints, and re-enable these functions.
 
 That's about it. You can do compilation all the way along, no need to do in the end, you may get a lot compilation errors.
