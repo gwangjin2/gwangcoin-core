@@ -35,7 +35,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2");
+uint256 hashGenesisBlock("0x3a6b3fc6cd51b185fab5e904bd609d9a56da1385657cd174a2201271b461f0cf");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Suwoncoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -1083,14 +1083,14 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 }
 
 
-static const int64 nGenesisBlockCoin = 100000000 * COIN;
+static const int64 nPremineCoin = 100000000 * COIN;
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
  
-    if (nHeight == 0)
+    if (nHeight == 1)
     {
-        return nGenesisBlockCoin;
+        return nPremineCoin;
     }
 
     int64 nSubsidy = 50 * COIN;
@@ -1101,7 +1101,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Suwoncoin: 1 days
+static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Suwoncoin:  1 day
 static const int64 nTargetSpacing = 1 * 60; // Suwoncoin: 1 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
@@ -2775,23 +2775,36 @@ bool InitBlockIndex() {
         //     CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d0104404e592054696d65732030352f4f63742f32303131205374657665204a6f62732c204170706c65e280997320566973696f6e6172792c2044696573206174203536)
         //     CTxOut(nValue=50.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
         //   vMerkleTree: 97ddfbbae6
-
+        /*
+        ~/Projects/suwoncoin/contrib/GenesisH0 $ python genesis.py  -a scrypt -v 100000000 -z "2014년9월15일,  살림살이 수원시민화폐가 시작됨"
+        04ffff001d01043f32303134eb858439ec9b943135ec9dbc2c2020ec82b4eba6bcec82b4ec9db420ec8898ec9b90ec8b9cebafbced9994ed8f90eab08020ec8b9cec9e91eb90a8
+        algorithm: scrypt
+        merkle hash: f66f773b894d8f25c90c2b18774f99faa71b8a9fb82fd62e59c360bf6c131c97
+        pszTimestamp: 2014년9월15일,  살림살이 수원시민화폐가 시작됨
+        pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+        time: 1410679571
+        bits: 0x1e0ffff0
+        Searching for genesis hash..
+        1349.0 hash/s, estimate: 0.2 hgenesis hash found!
+        nonce: 61134
+        genesis hash: 3a6b3fc6cd51b185fab5e904bd609d9a56da1385657cd174a2201271b461f0cf
+        */
         // Genesis block
-        const char* pszTimestamp = "NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56";
+        const char* pszTimestamp = "2014년9월15일,  살림살이 수원시민화폐가 시작됨";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+        txNew.vout[0].nValue = 1 * COIN;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1317972665;
+        block.nTime    = 1410679571;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2084524493;
+        block.nNonce   = 61134;
 
         if (fTestNet)
         {
@@ -2804,7 +2817,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(block.hashMerkleRoot == uint256("0xf66f773b894d8f25c90c2b18774f99faa71b8a9fb82fd62e59c360bf6c131c97"));
         block.print();
         assert(hash == hashGenesisBlock);
 
