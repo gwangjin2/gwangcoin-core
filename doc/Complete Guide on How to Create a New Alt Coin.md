@@ -123,39 +123,39 @@ You have multiple ways to disable it, my way is:
 - open checkpoints.cpp
 - there are 3 functions, comment out the normal return, and make them return either true, 0, or null, like this:
 Quote
-   bool CheckBlock(int nHeight, const uint256& hash)
-    {
-        if (fTestNet) return true; // Testnet has no checkpoints
-
-        MapCheckpoints::const_iterator i = mapCheckpoints.find(nHeight);
-        if (i == mapCheckpoints.end()) return true;
-        // return hash == i->second;
-      return true;
-    }
-
-    int GetTotalBlocksEstimate()
-    {
-        if (fTestNet) return 0;
-   
-        // return mapCheckpoints.rbegin()->first;
-      return 0;
-    }
-
-    CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex)
-    {
-        if (fTestNet) return NULL;
-
-        BOOST_REVERSE_FOREACH(const MapCheckpoints::value_type& i, mapCheckpoints)
-        {
-            const uint256& hash = i.second;
-            std::map<uint256, CBlockIndex*>::const_iterator t = mapBlockIndex.find(hash);
-            if (t != mapBlockIndex.end())
-                // return t->second;
-            return NULL;
-        }
-        return NULL;
-    }
-
+```cpp
+	bool CheckBlock(int nHeight, const uint256& hash)
+	{
+		if (fTestNet) return true; // Testnet has no checkpoints
+		MapCheckpoints::const_iterator i = mapCheckpoints.find(nHeight);
+		if (i == mapCheckpoints.end()) return true;
+		// return hash == i->second;
+		return true;
+	}
+	
+	int GetTotalBlocksEstimate()
+	{
+		if (fTestNet) return 0;
+	
+		// return mapCheckpoints.rbegin()->first;
+		return 0;
+	}
+	
+	CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex)
+	{
+		if (fTestNet) return NULL;
+	
+		BOOST_REVERSE_FOREACH(const MapCheckpoints::value_type& i, mapCheckpoints)
+		{
+		    const uint256& hash = i.second;
+		    std::map<uint256, CBlockIndex*>::const_iterator t = mapBlockIndex.find(hash);
+		    if (t != mapBlockIndex.end())
+		        // return t->second;
+		    return NULL;
+		}
+		return NULL;
+	}
+```
 Now this is disabled. Once everything works, you can premine 50 blocks, and extract some hashes and put them in the checkpoints, and re-enable these functions.
 
 That's about it. You can do compilation all the way along, no need to do in the end, you may get a lot compilation errors.
