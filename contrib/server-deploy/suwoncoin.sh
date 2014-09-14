@@ -9,27 +9,23 @@ check_config() {
 
 case "$1" in
   start)
-	
+	echo 'restart suwoncoind...'
+	./suwoncoind -daemon
+	ps ax |grep suwoncoind	
 	;;
   stop)
 
-	check_for_upstart 0
-	log_daemon_msg "Stopping OpenBSD Secure Shell server" "sshd" || true
-	if start-stop-daemon --stop --quiet --oknodo --pidfile /var/run/sshd.pid; then
-	    log_end_msg 0 || true
-	else
-	    log_end_msg 1 || true
-	fi
+	echo 'kill suwoncond...'
+	pkill -9 suwoncoind
 	;;
 
 
   status)
-	check_for_upstart 1
-	status_of_proc -p /var/run/sshd.pid /usr/sbin/sshd sshd && exit 0 || exit $?
+	ps ax |grep suwoncoind
 	;;
 
   *)
-	log_action_msg "Usage: suwoncoin.sh {start|stop|clean|backup|status}" || true
+	echo "Usage: suwoncoin.sh {start|stop|clean|backup|status}" || true
 	exit 1
 esac
 
