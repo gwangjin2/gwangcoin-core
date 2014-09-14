@@ -123,7 +123,7 @@ You have multiple ways to disable it, my way is:
 - open checkpoints.cpp
 - there are 3 functions, comment out the normal return, and make them return either true, 0, or null, like this:
 Quote
-   bool CheckBlock(int nHeight, const uint256& hash)
+    bool CheckBlock(int nHeight, const uint256& hash)
     {
         if (fTestNet) return true; // Testnet has no checkpoints
 
