@@ -6,24 +6,44 @@ check_config() {
     fi
 }
 
+check_status() {
+	ps ax |grep suwoncoind
+}
+
 
 case "$1" in
   start)
 	echo 'restart suwoncoind...'
 	./suwoncoind -daemon
-	ps ax |grep suwoncoind	
+	check_status
 	;;
-  stop)
 
+  stop)
 	echo 'kill suwoncond...'
 	pkill -9 suwoncoind
+	check_status
 	;;
-
 
   status)
-	ps ax |grep suwoncoind
+	check_status
+	#ps ax |grep suwoncoind
 	;;
 
+  clean)
+	echo 'clear all coin data'
+	#cp .suwoncoin/suwoncoin.conf . && rm -rf .suwoncoin && mkdir .suwoncoin && cp suwoncoin.conf .suwoncoin/suwoncoin.conf
+	rm -rf .suwoncoin && mkdir .suwoncoin && cp suwoncoin.conf .suwoncoin/suwoncoin.conf
+	;;
+	
+  backup)
+	echo 'backup .suwoncoin'
+	BACKUP_DIR='suwoncoin_backup'
+	mkdir -p ${BACKUP_DIR}
+	DATE=`date +%Y%m%d-%H%m%S`
+	tar cvzf ${BACKUP_DIR}/suwoncoin_data_backup-${DATE}.tar.gz .suwoncoin
+	echo 'backup complete'
+	;;
+	
   *)
 	echo "Usage: suwoncoin.sh {start|stop|clean|backup|status}" || true
 	exit 1
