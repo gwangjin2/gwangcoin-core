@@ -33,7 +33,7 @@ C:\mingw32\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SY
 C:\MinGW\bin should contain nothing but mingw-get.exe.
 Your gcc -v output should be:
 Code:
-'''sh
+```sh
 $ gcc -v
 Using built-in specs.
 COLLECT_GCC=c:\mingw32\bin\gcc.exe
@@ -42,7 +42,7 @@ Target: i686-w64-mingw32
 Configured with: ../../../src/gcc-4.9.1/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw491/i686-491-posix-dwarf-rt_v3-rev0/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw491/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw491/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw491/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw491/prerequisites/i686-w64-mingw32-static --with-cloog=/c/mingw491/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/c/mingw491/i686-491-posix-dwarf-rt_v3-rev0/mingw32/opt/include -I/c/mingw491/prerequisites/i686-zlib-static/include -I/c/mingw491/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/c/mingw491/i686-491-posix-dwarf-rt_v3-rev0/mingw32/opt/include -I/c/mingw491/prerequisites/i686-zlib-static/include -I/c/mingw491/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/c/mingw491/i686-491-posix-dwarf-rt_v3-rev0/mingw32/opt/lib -L/c/mingw491/prerequisites/i686-zlib-static/lib -L/c/mingw491/prerequisites/i686-w64-mingw32-static/lib'
 Thread model: posix
 gcc version 4.9.1 (i686-posix-dwarf-rev0, Built by MinGW-W64 project)
-'''
+```
 
 2. Download, unpack and build required dependencies.
 I'll save them in c:\deps folder.
@@ -50,34 +50,34 @@ I'll save them in c:\deps folder.
 2.1 OpenSSL: http://www.openssl.org/source/openssl-1.0.1i.tar.gz
 From a MinGw shell (C:\MinGW\msys\1.0\msys.bat), unpack the source archive with tar (this will avoid symlink issues) then configure and make:
 Code:
-'''sh
+```sh
 cd /c/deps/
 tar xvfz openssl-1.0.1i.tar.gz
 cd openssl-1.0.1i
 Configure no-shared no-dso mingw
 make
-'''
+```
 
 2.2 Berkeley DB: http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
 We'll use version 4.8 to preserve binary wallet compatibility.
 From a MinGW shell unpack the source archive, configure and make:
 Code:
-'''sh
+```sh
 cd /c/deps/
 tar xvfz db-4.8.30.NC.tar.gz
 cd db-4.8.30.NC/build_unix
 ../dist/configure --enable-mingw --enable-cxx --disable-shared --disable-replication
 make
-'''
+```
 
 2.3 Boost: http://sourceforge.net/projects/boost/files/boost/1.55.0/
 Download either the zip or the 7z archive, unpack boost inside your C:\deps folder, then bootstrap and compile from a Windows command prompt:
 Code:
-'''sh
+```sh
 cd C:\deps\boost_1_55_0\
 bootstrap.bat mingw
 b2 --build-type=complete --with-chrono --with-filesystem --with-program_options --with-system --with-thread toolset=gcc variant=release link=static threading=multi runtime-link=static stage
-'''
+```
 
 This will compile the required boost libraries and put them into the stage folder (C:\deps\boost_1_55_0\stage).
 Note: make sure you don't use tarballs, as unix EOL markers can break batch files.
@@ -85,33 +85,33 @@ Note: make sure you don't use tarballs, as unix EOL markers can break batch file
 2.4 Miniupnpc: http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.tar.gz
 Unpack Miniupnpc to C:\deps, rename containing folder from "miniupnpc-1.9" to "miniupnpc" then from a Windows command prompt:
 Code:
-'''sh
+```sh
 cd C:\deps\miniupnpc
 mingw32-make -f Makefile.mingw init upnpc-static
-'''
+```
 2.5 protoc and libprotobuf:
 Download and unpack http://protobuf.googlecode.com/files/protobuf-2.5.0.zip
 Then from msys shell
 Code:
-'''sh
+```sh
 cd /c/deps/protobuf-2.5.0
 configure --disable-shared
 make
-'''
+```
 
 2.6 qrencode:
 Download and unpack http://prdownloads.sourceforge.net/libpng/libpng-1.6.12.tar.gz?download inside your deps folder then configure and make:
 Code:
-'''sh
+```sh
 cd /c/deps/libpng-1.6.12
 configure --disable-shared
 make
 cp .libs/libpng16.a .libs/libpng.a
-'''
+```
 
 Download and unpack http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz inside your deps folder then configure and make:
 Code:
-'''sh
+```sh
 cd /c/deps/qrencode-3.4.4
 
 LIBS="../libpng-1.6.12/.libs/libpng.a ../../mingw32/i686-w64-mingw32/lib/libz.a" \
@@ -120,7 +120,7 @@ png_LIBS="-L../libpng-1.6.12/.libs" \
 configure --enable-static --disable-shared --without-tools
 
 make
-'''
+```
 
 2.7 Qt 5 libraries:
 Qt must be configured with ssl and zlib support.
@@ -129,7 +129,7 @@ http://download.qt-project.org/official_releases/qt/5.3/5.3.1/submodules/qtbase-
 http://download.qt-project.org/official_releases/qt/5.3/5.3.1/submodules/qttools-opensource-src-5.3.1.7z
 Then from a windows command prompt (note that the following assumes qtbase has been unpacked in C:\Qt\5.3.1 and qttools have been unpacked in C:\Qt\qttools-opensource-src-5.3.1):
 Code:
-'''sh
+```sh
 set INCLUDE=C:\deps\libpng-1.6.12;C:\deps\openssl-1.0.1i\include
 set LIB=C:\deps\libpng-1.6.12\.libs;C:\deps\openssl-1.0.1i
 
@@ -143,7 +143,7 @@ set PATH=%PATH%;C:\Qt\5.3.1\bin
 cd C:\Qt\qttools-opensource-src-5.3.1
 qmake qttools.pro
 mingw32-make
-'''
+```
 
 Note: consider using -j switch with mingw32-make to speed up compilation process. On a quad core -j4 or -j5 should give the best results.
 
@@ -152,7 +152,7 @@ Note: consider using -j switch with mingw32-make to speed up compilation process
 
 From msys shell configure and make bitcoin:
 Code:
-'''sh
+```sh
 cd /c/bitcoin-0.9.2.1
 
 ./autogen.sh
@@ -190,7 +190,7 @@ make
 strip src/bitcoin-cli.exe
 strip src/bitcoind.exe
 strip src/qt/bitcoin-qt.exe
-'''
+```
 
 
 64 bit binaries
@@ -214,7 +214,7 @@ Compile bitcoind 0.8.6: https://github.com/bitcoin/bitcoin/archive/v0.8.6.zip
 
 With a texteditor edit BOOST_SUFFIX, INCLUDEPATHS and LIBPATHS in your C:\bitcoin-0.8.6\src\makefile.mingw according to your dependencies location:
 Code:
-'''sh
+```sh
 BOOST_SUFFIX?=-mgw49-mt-s-1_55
 
 INCLUDEPATHS= \
@@ -269,12 +269,12 @@ Code:
 +LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware -static
  
  TESTDEFS = -DTEST_DATA_DIR=$(abspath test/data)
-'''
+```
  
 
 Upnp support is disabled by default. If you want to compile with upnp support set
 Code:
-'''sh
+```sh
 USE_UPNP:=1
 and add miniupnpc path to INCLUDEPATHS and LIBPATHS:
 Code:
@@ -291,38 +291,38 @@ LIBPATHS= \
  -L"/c/deps/miniupnpc" \
  -L"/c/deps/db-4.8.30.NC/build_unix" \
  -L"/c/deps/openssl-1.0.1i"
-'''
+```
 From Msys shell compile bitcoind:
 Code:
-'''sh
+```sh
 cd /c/bitcoin-0.8.6/src
 make -f makefile.mingw
 strip bitcoind.exe
-'''
+```
 
 Compile bitcoin-qt 0.8.6 with Qt 4.8: 
 Download and unpack http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip
 Note that due to a bug in qt 4.8.6 you will need to explicitly enable windows styles: https://bugreports.qt-project.org/browse/QTBUG-38706
 Assuming qt sources have been unpacked to C:\Qt\4.8.6, from a windows command prompt:
 Code:
-'''sh
+```sh
 cd C:\Qt\4.8.6
 configure -release -opensource -confirm-license -static -no-sql-sqlite -no-qt3support -no-opengl -qt-zlib -no-gif -qt-libpng -qt-libmng -no-libtiff -qt-libjpeg -no-dsp -no-vcproj -no-openssl -no-dbus -no-phonon -no-phonon-backend -no-multimedia -no-audio-backend -no-webkit -no-script -no-scripttools -no-declarative -no-declarative-debug -qt-style-windows -qt-style-windowsxp -qt-style-windowsvista -no-style-plastique -no-style-cleanlooks -no-style-motif -no-style-cde -nomake demos -nomake examples
 mingw32-make
-'''
+```
 Note that if you skipped bitcoind compilation or if you have cleaned up your source folder you will need to compile libleveldb.a and libmemenv.a libraries before proceeding.
 From msys shell:
 Code:
-'''sh
+```sh
 cd /C/bitcoin-0.8.6/src/leveldb
 TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
-'''
+```
 
 Edit C:\bitcoin-0.8.6\bitcoin-qt.pro with your favourite text editor and add 
 
 dependency library locations:
 Code:
-'''sh
+```sh
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
@@ -338,31 +338,31 @@ MINIUPNPC_INCLUDE_PATH=C:/deps/
 MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
 QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
 QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
-'''
+```
 
 Comment out genleveldb.commands for win32
 Code:
-'''sh
+```sh
     LIBS += -lshlwapi
     #genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
 }
-'''
+```
 
 flags for static build:
 Code:
-'''sh
+```sh
 CONFIG += static
-'''
+```
 
 Code:
 
-'''sh
+```sh
 win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static
-'''
+```
 
 bitcoin-qt.pro patch:
 Code:
-'''sh
+```sh
 --- bitcoin-qt.pro	Thu Dec 05 14:11:26 2013
 +++ bitcoin-qt.pro	Thu Jun 19 20:00:00 2014
 @@ -7,6 +7,7 @@
@@ -409,16 +409,16 @@ Code:
  }
  genleveldb.target = $$PWD/src/leveldb/libleveldb.a
  genleveldb.depends = FORCE
-'''
+```
 From a windows command prompt configure and make:
 Code:
 
-'''sh
+```sh
 set PATH=%PATH%;C:\Qt\4.8.6\bin
 cd C:\bitcoin-0.8.6\
 qmake "USE_QRCODE=1" "USE_UPNP=1" "USE_IPV6=1" bitcoin-qt.pro
 mingw32-make -f Makefile.Release
-'''
+```
 
 
 
