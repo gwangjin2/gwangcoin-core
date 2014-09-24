@@ -8,6 +8,7 @@ Authors
 * Douglas Huff <dhuff@jrbobdobbs.org>
 * Colin Dean <cad@cad.cx>
 * Gavin Andresen <gavinandresen@gmail.com>
+* yezune, choi <yezune@gmail.com>
 
 License
 -------
@@ -72,12 +73,12 @@ Installing the dependencies using MacPorts is very straightforward.
 
     sudo port install boost db48@+no_java openssl miniupnpc
 
-### Building `litecoind`
+### Building `suwoncoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:litecoin-project/litecoin.git litecoin
-        cd litecoin
+        git clone git@github.com:yezune/suwoncoin.git suwoncoin
+        cd suwoncoin
 
 2.  Build litecoind:
 
