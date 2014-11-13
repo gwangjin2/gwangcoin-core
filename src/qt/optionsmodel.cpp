@@ -55,6 +55,10 @@ void OptionsModel::Init()
     language = settings.value("language", "").toString();
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
 
+    fCashback = settings.value("fCashback", false).toBool();
+    nCashbackPercent = settings.value("nCashbackPercent", 0.0).toFloat();
+
+
     // These are shared with core Bitcoin; we want
     // command-line options to override the GUI settings:
     if (settings.contains("fUseUPnP"))
@@ -98,7 +102,7 @@ bool OptionsModel::Upgrade()
     CWalletDB walletdb("wallet.dat");
 
     QList<QString> intOptions;
-    intOptions << "nDisplayUnit" << "nTransactionFee";
+    intOptions << "nDisplayUnit" << "nTransactionFee" << "nCashbackPercent";
     foreach(QString key, intOptions)
     {
         int value = 0;
@@ -109,7 +113,7 @@ bool OptionsModel::Upgrade()
         }
     }
     QList<QString> boolOptions;
-    boolOptions << "bDisplayAddresses" << "fMinimizeToTray" << "fMinimizeOnClose" << "fUseProxy" << "fUseUPnP";
+    boolOptions << "bDisplayAddresses" << "fMinimizeToTray" << "fMinimizeOnClose" << "fUseProxy" << "fUseUPnP" << "fCashback";
     foreach(QString key, boolOptions)
     {
         bool value = false;
@@ -206,6 +210,10 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return settings.value("language", "");
         case CoinControlFeatures:
             return QVariant(fCoinControlFeatures);
+        case Cashback:
+            return QVariant(fCashback);
+        case CashbackPercent:
+            return QVariant(nCashbackPercent);
         default:
             return QVariant();
         }
@@ -249,7 +257,7 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             proxy.first.SetIP(addr);
             settings.setValue("addrProxy", proxy.first.ToStringIPPort().c_str());
             successful = ApplyProxySettings();
-        }
+            }
         break;
         case ProxyPort: {
             proxyType proxy;
@@ -259,7 +267,7 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             proxy.first.SetPort(value.toInt());
             settings.setValue("addrProxy", proxy.first.ToStringIPPort().c_str());
             successful = ApplyProxySettings();
-        }
+            }
         break;
         case ProxySocksVersion: {
             proxyType proxy;
@@ -269,7 +277,7 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             proxy.second = value.toInt();
             settings.setValue("nSocksVersion", proxy.second);
             successful = ApplyProxySettings();
-        }
+            }
         break;
         case Fee:
             nTransactionFee = value.toLongLong();
@@ -294,11 +302,25 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
         case Language:
             settings.setValue("language", value);
             break;
+
         case CoinControlFeatures: {
             fCoinControlFeatures = value.toBool();
             settings.setValue("fCoinControlFeatures", fCoinControlFeatures);
             emit coinControlFeaturesChanged(fCoinControlFeatures);
-        }
+            }
+        break;
+
+        case Cashback: {
+             fCashback = value.toBool();
+             settings.setValue("fCashback", fCashback);
+             emit cashbackChanged(fCashback);
+            }
+        break;
+        case CashbackPercent: {
+             nCashbackPercent = value.toFloat();
+             settings.setValue("nCashbackPercent", nCashbackPercent);
+             emit cashbackPercentChanged(nCashbackPercent);
+            }
         break;
         default:
             break;

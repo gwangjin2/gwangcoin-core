@@ -34,6 +34,13 @@ QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
 QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
 }
 
+macx {
+MINIUPNPC_INCLUDE_PATH=/usr/local/include
+MINIUPNPC_LIB_PATH=/usr/local/lib
+QRENCODE_INCLUDE_PATH=/usr/local/include
+QRENCODE_LIB_PATH=/usr/local/lib
+}
+
 OBJECTS_DIR = build
 MOC_DIR = build
 UI_DIR = build

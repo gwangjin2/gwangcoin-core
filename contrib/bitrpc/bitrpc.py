@@ -1,18 +1,18 @@
-from jsonrpc import ServiceProxy
+from jsonrpc import ServerProxy as ServiceProxy
 import sys
 import string
 
 # ===== BEGIN USER SETTINGS =====
 # if you do not set these you will be prompted for a password for every command
-rpcuser = ""
-rpcpass = ""
+rpcuser = "suwoncoinrpc"
+rpcpass = "BFZmHDbXwyjrwZeoHNJqLYPwS4LABVT8L84UzBNxAFWF"
 # ====== END USER SETTINGS ======
 
 
 if rpcpass == "":
-	access = ServiceProxy("http://127.0.0.1:9332")
+	access = ServiceProxy("http://127.0.0.1:9776")
 else:
-	access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.1:9332")
+	access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.1:9776")
 cmd = sys.argv[1].lower()
 
 if cmd == "backupwallet":

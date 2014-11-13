@@ -36,6 +36,8 @@ public:
         CoinControlFeatures, // bool
         SpendZeroConfChange,    // bool
         OptionIDRowCount,
+        Cashback,              // bool
+        CashbackPercent,      // float
     };
 
     void Init();
@@ -56,6 +58,8 @@ public:
     bool getDisplayAddresses() { return bDisplayAddresses; }
     QString getLanguage() { return language; }
     bool getCoinControlFeatures();
+    bool getCashback() { return fCashback; }
+    float getCashbackPercent() { return nCashbackPercent; }
 
 private:
     int nDisplayUnit;
@@ -64,11 +68,15 @@ private:
     bool fMinimizeOnClose;
     QString language;
     bool fCoinControlFeatures;
+    bool fCashback;
+    float nCashbackPercent;
 
 signals:
     void displayUnitChanged(int unit);
     void transactionFeeChanged(qint64);
     void coinControlFeaturesChanged(bool);
+    void cashbackChanged(bool);
+    void cashbackPercentChanged(float);
 };
 
 #endif // OPTIONSMODEL_H
