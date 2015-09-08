@@ -1,27 +1,27 @@
-Suwoncoin integration/staging tree
+Gwangjin-coin integration/staging tree
 ================================
 
-http://www.suwoncoin.org
+http://www.gwangmoney.money
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
-Copyright (c) 2014-     Suwoncoin Developers
+Copyright (c) 2014-2015 Suwoncoin Developers
+Copyright (c) 2015-     gwcoin Developers
 
-수원코인은 ?
+광진마을화폐는 ?
 ----------------
 
-수원코인(Suwoncoin)은 수원시민화폐를 위한 기반시스템으로 라이트코인(Litecoin)기반으로 만들어 졌으며 주요특징으로
+광진마을화폐은 광진구민과 협동사회경제 조직을 기반시스템으로 수원시민화폐(suwoncoin)기반으로 만들어 졌으며 주요특징으로
 
   -  블록생성시간: 1분
-  -  마이닝 없음(초기 블럭에서 1억코인 생성)
-  -  화폐총량: 1억 코인
-
-The rest is the same as Bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+  -  마이닝 없음(초기 블럭에서 10억코인 생성)
+  -  화폐총량: 10억 코인
+  -  출금확인: 5분.
+  - 블록당 발행량 0 코인
+  - 난위도 조절 간격(retarget difficulty) 2016 blocks
 
 For more information, as well as an immediately useable, binary version of
-the Suwoncoin client sofware, see http://www.suwoncoin.org.
+the gwangmoney.com client sofware, see http://www.gwangmoney.com.
 
 License
 -------
@@ -71,5 +71,5 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
     qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
     make -f Makefile.test
-    ./suwoncoin-qt_test
+    ./gwangcoin-qt_test
 
