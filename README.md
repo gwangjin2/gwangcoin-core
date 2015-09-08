@@ -1,4 +1,4 @@
-Gwangjin-coin integration/staging tree
+gwangcoin integration/staging tree
 ================================
 
 http://www.gwangmoney.money
