@@ -1699,7 +1699,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 SWC</source>
+        <source>123.456 GW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

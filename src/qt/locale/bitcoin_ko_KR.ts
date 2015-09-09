@@ -2242,7 +2242,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>123.456 SWC</source>
+        <source>123.456 GW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

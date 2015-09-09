@@ -19,9 +19,9 @@ NETWORKS = (
     NetworkValues("Litecoin", "testnet", "XLT", b'\xef', b'\x6f', b'\xc4',
                   h2b('0436ef7d'), h2b('0436f6e1')),
 
-    # SWC suwoncoin mainnet : Ltpv/Ltub
-    NetworkValues("Gwangcoin", "mainnet", "SWC", b'\xfd', b'\x7d', b'\5', h2b('019d9cfe'), h2b('019da462')),
-    # SWC suwoncoin testnet : ttpv/ttub
+    # GW suwoncoin mainnet : Ltpv/Ltub
+    NetworkValues("Gwangcoin", "mainnet", "GW", b'\xfd', b'\x7d', b'\5', h2b('019d9cfe'), h2b('019da462')),
+    # GW suwoncoin testnet : ttpv/ttub
     #NetworkValues("Litecoin", "testnet", "XLT", b'\xef', b'\x6f', b'\xc4',h2b('0436ef7d'), h2b('0436f6e1')),
 
     # VIA viacoin mainnet : xprv/xpub

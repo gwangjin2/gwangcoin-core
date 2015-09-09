@@ -15,11 +15,11 @@ using namespace std;
 /*
  * make from gwangcoin/contrib/pycoin
 
-~/Projects/gwangcoin/contrib/pycoin $ ku -nSWC 1
+~/Projects/gwangcoin/contrib/pycoin $ ku -nGW 1
 
 input                          : 1
 network                        : Gwangcoin mainnet
-netcode                        : SWC
+netcode                        : GW
 secret exponent                : 1
  hex                           : 1
 wif                            : eRhXeqAbHtnnXvMLvArwR2wDxvq3CsbvBmbyZvexE4g5FFMGBQju
@@ -38,10 +38,10 @@ Gwangcoin address              : sUvfdj9d7cnHNVcpHDkASXSKoAeTsKojEm
 Gwangcoin address uncompressed : sXXmeff54XxS9YfnPVmxNu5PPojcrHpixP
 
 
-~/Projects/gwangcoin/contrib/pycoin $ ku -nSWC 2
+~/Projects/gwangcoin/contrib/pycoin $ ku -nGW 2
 input                          : 2
 network                        : Gwangcoin mainnet
-netcode                        : SWC
+netcode                        : GW
 secret exponent                : 2
  hex                           : 2
 wif                            : eRhXeqAbHtnnXvMLvArwR2wDxvq3CsbvBmbyZvexE4g5FkG9gW1b
