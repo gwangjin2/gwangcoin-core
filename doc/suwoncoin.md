@@ -1,4 +1,4 @@
-suwoncoin.md
+gwangcoin.md
 
 
 src/base58.h

@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 echo 'kill suwoncond...'
-pkill -9 suwoncoind
+pkill -9 gwangcoind
 #
 #echo 'clear all coin data'
-#cp .suwoncoin/suwoncoin.conf . && rm -rf .suwoncoin && mkdir .suwoncoin && cp suwoncoin.conf .suwoncoin/suwoncoin.conf
+#cp .gwangcoin/gwangcoin.conf . && rm -rf .gwangcoin && mkdir .gwangcoin && cp gwangcoin.conf .gwangcoin/gwangcoin.conf
 #
-#echo 'restart suwoncoind...'
-#./suwoncoind -daemon
+#echo 'restart gwangcoind...'
+#./gwangcoind -daemon
 
-ps ax |grep suwoncoind
+ps ax |grep gwangcoind
 

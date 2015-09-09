@@ -1,10 +1,10 @@
 #!/bin/bash
 #
-./stop_suwoncoin.sh
+./stop_gwangcoin.sh
 #
-./backup_suwoncoin.sh
+./backup_gwangcoin.sh
 #
 echo 'clear all coin data'
-#cp .suwoncoin/suwoncoin.conf . && rm -rf .suwoncoin && mkdir .suwoncoin && cp suwoncoin.conf .suwoncoin/suwoncoin.conf
-rm -rf .suwoncoin && mkdir .suwoncoin && cp suwoncoin.conf .suwoncoin/suwoncoin.conf
+#cp .gwangcoin/gwangcoin.conf . && rm -rf .gwangcoin && mkdir .gwangcoin && cp gwangcoin.conf .gwangcoin/gwangcoin.conf
+rm -rf .gwangcoin && mkdir .gwangcoin && cp gwangcoin.conf .gwangcoin/gwangcoin.conf
 #

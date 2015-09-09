@@ -55,10 +55,10 @@ static const int64 DUST_SOFT_LIMIT = 100000; // 0.001 SWC
 static const int64 DUST_HARD_LIMIT = 1000;   // 0.00001 SWC mininput
 /** No amount larger than this (in satoshi) is valid */
 //static const int64 MAX_MONEY = 84000000 * COIN;
-static const int64 MAX_MONEY  = 100000001 * COIN; //suwoncoin: total coin
+static const int64 MAX_MONEY  = 10000000000 * COIN; //gwangcoin: total coin
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
-static const int COINBASE_MATURITY = 10;
+static const int COINBASE_MATURITY = 5;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 /** Maximum number of script-checking threads allowed */
@@ -71,11 +71,6 @@ static const int fHaveUPnP = false;
 
 
 extern CScript COINBASE_FLAGS;
-
-
-
-
-
 
 extern CCriticalSection cs_main;
 extern std::map<uint256, CBlockIndex*> mapBlockIndex;

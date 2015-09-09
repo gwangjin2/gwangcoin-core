@@ -11,7 +11,7 @@ Copyright (c) 2015-     gwcoin Developers
 광진마을화폐는 ?
 ----------------
 
-광진마을화폐은 광진구민과 협동사회경제 조직을 기반시스템으로 수원시민화폐(suwoncoin)기반으로 만들어 졌으며 주요특징으로
+광진마을화폐은 광진구민과 협동사회경제 조직을 기반시스템으로 수원시민화폐(gwangcoin)기반으로 만들어 졌으며 주요특징으로
 
   -  블록생성시간: 1분
   -  마이닝 없음(초기 블럭에서 10억코인 생성)
@@ -47,7 +47,7 @@ match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/yezune/suwoncoin/tags) are created
+completely stable. [Tags](https://github.com/yezune/gwangcoin/tags) are created
 regularly to indicate new official, stable release versions of Litecoin.
 
 Testing

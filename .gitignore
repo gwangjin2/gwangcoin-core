@@ -1,7 +1,7 @@
 src/*.exe
-src/suwoncoin
-src/suwoncoind
-src/test_suwoncoin
+src/gwangcoin
+src/gwangcoind
+src/test_gwangcoin
 .*.swp
 *.*~*
 *.bak
@@ -10,18 +10,18 @@ src/test_suwoncoin
 *.pyc
 *.o
 *.patch
-.suwoncoin
+.gwangcoin
 .litecoin
 
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-suwoncoin-qt
+gwangcoin-qt
 Suwoncoin-Qt.app
 
 # Unit-tests
 Makefile.test
-suwoncoin-qt_test
+gwangcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp

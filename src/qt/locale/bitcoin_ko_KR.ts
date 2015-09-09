@@ -332,7 +332,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Suwoncoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your suwoncoins from being stolen by malware infecting your computer.</source>
+        <source>Suwoncoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your gwangcoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1614,7 +1614,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="obsolete">네트워크 요청 애러</translation>
     </message>
     <message>
-        <source>Cannot start suwoncoin: click-to-pay handler</source>
+        <source>Cannot start gwangcoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3828,7 +3828,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=suwoncoinrpc
+rpcuser=gwangcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3863,15 +3863,15 @@ for example: alertnotify=echo %%s | mail -s &quot;Suwoncoin Alert&quot; admin@fo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Send command to -server or suwoncoind</source>
+        <source>Send command to -server or gwangcoind</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Specify configuration file (default: suwoncoin.conf)</source>
+        <source>Specify configuration file (default: gwangcoin.conf)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Specify pid file (default: suwoncoind.pid)</source>
+        <source>Specify pid file (default: gwangcoind.pid)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

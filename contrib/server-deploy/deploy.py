@@ -13,12 +13,12 @@ HOSTS=[
 ]
 
 FILES = [
-'suwoncoind',
-'suwoncoin.conf',
-'clean_suwoncoin.sh',
-'start_suwoncoin.sh',
-'stop_suwoncoin.sh',
-'backup_suwoncoin.sh',
+'gwangcoind',
+'gwangcoin.conf',
+'clean_gwangcoin.sh',
+'start_gwangcoin.sh',
+'stop_gwangcoin.sh',
+'backup_gwangcoin.sh',
 ]
 
 for host in HOSTS:

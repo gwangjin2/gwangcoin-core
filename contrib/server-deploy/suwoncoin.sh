@@ -7,45 +7,45 @@ check_config() {
 }
 
 check_status() {
-	ps ax |grep suwoncoind
+	ps ax |grep gwangcoind
 }
 
 
 case "$1" in
   start)
-	echo 'restart suwoncoind...'
-	./suwoncoind -daemon
+	echo 'restart gwangcoind...'
+	./gwangcoind -daemon
 	check_status
 	;;
 
   stop)
 	echo 'kill suwoncond...'
-	pkill -9 suwoncoind
+	pkill -9 gwangcoind
 	check_status
 	;;
 
   status)
 	check_status
-	#ps ax |grep suwoncoind
+	#ps ax |grep gwangcoind
 	;;
 
   clean)
 	echo 'clear all coin data'
-	#cp .suwoncoin/suwoncoin.conf . && rm -rf .suwoncoin && mkdir .suwoncoin && cp suwoncoin.conf .suwoncoin/suwoncoin.conf
-	rm -rf .suwoncoin && mkdir .suwoncoin && cp suwoncoin.conf .suwoncoin/suwoncoin.conf
+	#cp .gwangcoin/gwangcoin.conf . && rm -rf .gwangcoin && mkdir .gwangcoin && cp gwangcoin.conf .gwangcoin/gwangcoin.conf
+	rm -rf .gwangcoin && mkdir .gwangcoin && cp gwangcoin.conf .gwangcoin/gwangcoin.conf
 	;;
 	
   backup)
-	echo 'backup .suwoncoin'
-	BACKUP_DIR='suwoncoin_backup'
+	echo 'backup .gwangcoin'
+	BACKUP_DIR='gwangcoin_backup'
 	mkdir -p ${BACKUP_DIR}
 	DATE=`date +%Y%m%d-%H%m%S`
-	tar cvzf ${BACKUP_DIR}/suwoncoin_data_backup-${DATE}.tar.gz .suwoncoin
+	tar cvzf ${BACKUP_DIR}/gwangcoin_data_backup-${DATE}.tar.gz .gwangcoin
 	echo 'backup complete'
 	;;
 	
   *)
-	echo "Usage: suwoncoin.sh {start|stop|clean|backup|status}" || true
+	echo "Usage: gwangcoin.sh {start|stop|clean|backup|status}" || true
 	exit 1
 esac
 

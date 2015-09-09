@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-echo 'restart suwoncoind...'
-./suwoncoind -daemon
+echo 'restart gwangcoind...'
+./gwangcoind -daemon
 
-ps ax |grep suwoncoind
+ps ax |grep gwangcoind
 

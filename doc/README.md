@@ -26,12 +26,12 @@ You need the Qt4 run-time libraries to run Suwoncoin-Qt. On Debian or Ubuntu:
 
 Unpack the files into a directory and run:
 
-- bin/32/suwoncoin-qt (GUI, 32-bit)
-- bin/32/suwoncoind (headless, 32-bit)
-- bin/64/suwoncoin-qt (GUI, 64-bit)
-- bin/64/suwoncoind (headless, 64-bit)
+- bin/32/gwangcoin-qt (GUI, 32-bit)
+- bin/32/gwangcoind (headless, 32-bit)
+- bin/64/gwangcoin-qt (GUI, 64-bit)
+- bin/64/gwangcoind (headless, 64-bit)
 
-See the documentation at the [suwoncoin Wiki](http://suwoncoin.org)
+See the documentation at the [gwangcoin Wiki](http://gwangcoin.org)
 for help and more information.
 
 

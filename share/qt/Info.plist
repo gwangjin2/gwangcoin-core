@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>suwoncoin.icns</string>
+	<string>gwangcoin.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
@@ -17,17 +17,17 @@
 	<key>CFBundleExecutable</key>
 	<string>Suwoncoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.suwoncoin.Suwoncoin-Qt</string>
+	<string>org.gwangcoin.Suwoncoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.suwoncoin.SuwoncoinPayment</string>
+            <string>org.gwangcoin.SuwoncoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>suwoncoin</string>
+              <string>gwangcoin</string>
             </array>
           </dict>
         </array>

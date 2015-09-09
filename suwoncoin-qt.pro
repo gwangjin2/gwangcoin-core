@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = suwoncoin-qt
+TARGET = gwangcoin-qt
 macx:TARGET = "Suwoncoin-Qt"
 VERSION = 0.0.0.1
 INCLUDEPATH += src src/json src/qt
@@ -341,7 +341,7 @@ SOURCES += src/qt/test/test_main.cpp \
 HEADERS += src/qt/test/uritests.h
 DEPENDPATH += src/qt/test
 QT += testlib
-TARGET = suwoncoin-qt_test
+TARGET = gwangcoin-qt_test
 DEFINES += BITCOIN_QT_TEST
   macx: CONFIG -= app_bundle
 }
@@ -449,7 +449,7 @@ macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit -framework CoreServices
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/suwoncoin.icns
+macx:ICON = src/qt/res/icons/gwangcoin.icns
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread

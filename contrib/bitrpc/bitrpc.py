@@ -4,7 +4,7 @@ import string
 
 # ===== BEGIN USER SETTINGS =====
 # if you do not set these you will be prompted for a password for every command
-rpcuser = "suwoncoinrpc"
+rpcuser = "gwangcoinrpc"
 rpcpass = "BFZmHDbXwyjrwZeoHNJqLYPwS4LABVT8L84UzBNxAFWF"
 # ====== END USER SETTINGS ======
 

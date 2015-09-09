@@ -36,7 +36,7 @@ Value importprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
-            "importprivkey <suwoncoinprivkey> [label] [rescan=true]\n"
+            "importprivkey <gwangcoinprivkey> [label] [rescan=true]\n"
             "Adds a private key (as returned by dumpprivkey) to your wallet.");
 
     EnsureWalletIsUnlocked();
@@ -83,8 +83,8 @@ Value dumpprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey <suwoncoinaddress>\n"
-            "Reveals the private key corresponding to <suwoncoinaddress>.");
+            "dumpprivkey <gwangcoinaddress>\n"
+            "Reveals the private key corresponding to <gwangcoinaddress>.");
 
     string strAddress = params[0].get_str();
     CBitcoinAddress address;

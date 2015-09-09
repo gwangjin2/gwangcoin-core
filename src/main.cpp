@@ -2776,7 +2776,7 @@ bool InitBlockIndex() {
         //     CTxOut(nValue=50.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
         //   vMerkleTree: 97ddfbbae6
         /*
-        ~/Projects/suwoncoin/contrib/GenesisH0 $ python genesis.py  -a scrypt -v 100000000 -z "2014년9월15일,  살림살이 수원시민화폐가 시작됨"
+        ~/Projects/gwangcoin/contrib/GenesisH0 $ python genesis.py  -a scrypt -v 100000000 -z "2014년9월15일,  살림살이 수원시민화폐가 시작됨"
         04ffff001d01043f32303134eb858439ec9b943135ec9dbc2c2020ec82b4eba6bcec82b4ec9db420ec8898ec9b90ec8b9cebafbced9994ed8f90eab08020ec8b9cec9e91eb90a8
         algorithm: scrypt
         merkle hash: f66f773b894d8f25c90c2b18774f99faa71b8a9fb82fd62e59c360bf6c131c97
@@ -4569,7 +4569,7 @@ void static SuwoncoinMiner(CWallet *pwallet)
 {
     printf("SuwoncoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("suwoncoin-miner");
+    RenameThread("gwangcoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

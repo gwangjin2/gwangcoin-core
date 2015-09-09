@@ -13,9 +13,9 @@ using namespace std;
 
 
 /*
- * make from suwoncoin/contrib/pycoin
+ * make from gwangcoin/contrib/pycoin
 
-~/Projects/suwoncoin/contrib/pycoin $ ku -nSWC 1
+~/Projects/gwangcoin/contrib/pycoin $ ku -nSWC 1
 
 input                          : 1
 network                        : Suwoncoin mainnet
@@ -38,7 +38,7 @@ Suwoncoin address              : sUvfdj9d7cnHNVcpHDkASXSKoAeTsKojEm
 Suwoncoin address uncompressed : sXXmeff54XxS9YfnPVmxNu5PPojcrHpixP
 
 
-~/Projects/suwoncoin/contrib/pycoin $ ku -nSWC 2
+~/Projects/gwangcoin/contrib/pycoin $ ku -nSWC 2
 input                          : 2
 network                        : Suwoncoin mainnet
 netcode                        : SWC

@@ -73,12 +73,12 @@ Installing the dependencies using MacPorts is very straightforward.
 
     sudo port install boost db48@+no_java openssl miniupnpc
 
-### Building `suwoncoind`
+### Building `gwangcoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:yezune/suwoncoin.git suwoncoin
-        cd suwoncoin
+        git clone git@github.com:yezune/gwangcoin.git gwangcoin
+        cd gwangcoin
 
 2.  Build litecoind:
 
@@ -108,12 +108,12 @@ If not, you can ensure that the Brew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `suwoncoind`
+### Building `gwangcoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/yezune/suwoncoin.git
-        cd suwoncoin
+        git clone https://github.com/yezune/gwangcoin.git
+        cd gwangcoin
 
 2.  Modify source in order to pick up the `openssl` library.
 
@@ -136,9 +136,9 @@ Creating a release build
 ------------------------
 
 A litecoind binary is not included in the Litecoin-Qt.app bundle. You can ignore
-this section if you are building `suwoncoind` for your own use.
+this section if you are building `gwangcoind` for your own use.
 
-If you are building `suwoncoind` for others, your build machine should be set up
+If you are building `gwangcoind` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -167,20 +167,20 @@ Once dependencies are compiled, creating `Suwoncoin-Qt.app` is easy:
 Running
 -------
 
-It's now available at `./suwoncoind`, provided that you are still in the `src`
+It's now available at `./gwangcoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./suwoncoind` to get the filename where it should be put, or just try these
+Run `./gwangcoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=suwoncoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Suwoncoin/suwoncoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Suwoncoin/suwoncoin.conf"
+    echo -e "rpcuser=gwangcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Suwoncoin/gwangcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Suwoncoin/gwangcoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours.
 
 Other commands:
 
-    ./suwoncoind --help  # for a list of command-line options.
-    ./suwoncoind -daemon # to start the litecoin daemon.
-    ./suwoncoind help    # When the daemon is running, to get a list of RPC commands
+    ./gwangcoind --help  # for a list of command-line options.
+    ./gwangcoind -daemon # to start the litecoin daemon.
+    ./gwangcoind help    # When the daemon is running, to get a list of RPC commands

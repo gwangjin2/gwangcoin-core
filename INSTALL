@@ -4,6 +4,6 @@ See doc/readme-qt.rst for instructions on building Suwoncoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
 implementation of Suwoncoin.
 
-See doc/build-*.txt for instructions on building suwoncoind,
+See doc/build-*.txt for instructions on building gwangcoind,
 the intended-for-services, no-graphical-interface, reference
 implementation of Suwoncoin.

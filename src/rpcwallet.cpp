@@ -187,7 +187,7 @@ Value setaccount(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "setaccount <suwoncoinaddress> <account>\n"
+            "setaccount <gwangcoinaddress> <account>\n"
             "Sets the account associated with the given address.");
 
     CBitcoinAddress address(params[0].get_str());
@@ -217,7 +217,7 @@ Value getaccount(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getaccount <suwoncoinaddress>\n"
+            "getaccount <gwangcoinaddress>\n"
             "Returns the account associated with the given address.");
 
     CBitcoinAddress address(params[0].get_str());
@@ -275,7 +275,7 @@ Value sendtoaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddress <suwoncoinaddress> <amount> [comment] [comment-to]\n"
+            "sendtoaddress <gwangcoinaddress> <amount> [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.00000001"
             + HelpRequiringPassphrase());
 
@@ -338,7 +338,7 @@ Value signmessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "signmessage <suwoncoinaddress> <message>\n"
+            "signmessage <gwangcoinaddress> <message>\n"
             "Sign a message with the private key of an address");
 
     EnsureWalletIsUnlocked();
@@ -373,7 +373,7 @@ Value verifymessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage <suwoncoinaddress> <signature> <message>\n"
+            "verifymessage <gwangcoinaddress> <signature> <message>\n"
             "Verify a signed message");
 
     string strAddress  = params[0].get_str();
@@ -410,8 +410,8 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getreceivedbyaddress <suwoncoinaddress> [minconf=1]\n"
-            "Returns the total amount received by <suwoncoinaddress> in transactions with at least [minconf] confirmations.");
+            "getreceivedbyaddress <gwangcoinaddress> [minconf=1]\n"
+            "Returns the total amount received by <gwangcoinaddress> in transactions with at least [minconf] confirmations.");
 
     // Bitcoin address
     CBitcoinAddress address = CBitcoinAddress(params[0].get_str());
@@ -631,7 +631,7 @@ Value sendfrom(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 6)
         throw runtime_error(
-            "sendfrom <fromaccount> <tosuwoncoinaddress> <amount> [minconf=1] [comment] [comment-to]\n"
+            "sendfrom <fromaccount> <togwangcoinaddress> <amount> [minconf=1] [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.00000001"
             + HelpRequiringPassphrase());
 
@@ -815,7 +815,7 @@ Value createmultisig(const Array& params, bool fHelp)
         string msg = "createmultisig <nrequired> <'[\"key\",\"key\"]'>\n"
             "Creates a multi-signature address and returns a json object\n"
             "with keys:\n"
-            "address : suwoncoin address\n"
+            "address : gwangcoin address\n"
             "redeemScript : hex-encoded redemption script";
         throw runtime_error(msg);
     }
@@ -1521,8 +1521,8 @@ Value validateaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress <suwoncoinaddress>\n"
-            "Return information about <suwoncoinaddress>.");
+            "validateaddress <gwangcoinaddress>\n"
+            "Return information about <gwangcoinaddress>.");
 
     CBitcoinAddress address(params[0].get_str());
     bool isValid = address.IsValid();
