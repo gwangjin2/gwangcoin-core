@@ -1091,7 +1091,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
     int64 value = 0; 
     
-    if(nHeight > 10){
+    if(nHeight  < 10){
         value = nPremineCoin;  
     }else{
         value = 0;
