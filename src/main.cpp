@@ -1087,23 +1087,34 @@ static const int64 nPremineCoin = 100000000 * COIN;
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
- 
-    if (nHeight == 1)
-    {
-        return nPremineCoin;
+    // total 1000000000 (10억코인)
+
+    int64 value = 0; 
+    
+    if(nHeight > 10){
+        value = nPremineCoin;  
+    }else{
+        value = 0;
     }
 
-    int64 nSubsidy = 50 * COIN;
+    return value;
 
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 840000); // Gwangcoin: 840k blocks in ~4 years
+    // if (nHeight == 1)
+    // {
+    //     return nPremineCoin;
+    // }
 
-    return nSubsidy + nFees;
+    // int64 nSubsidy = 50 * COIN;
+
+    // // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
+    // nSubsidy >>= (nHeight / 840000); // Gwangcoin: 840k blocks in ~4 years
+
+    // return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Gwangcoin:  1 day
+static const int64 nTargetTimespan = 12 * 60 * 60; // Gwangcoin:  half day
 static const int64 nTargetSpacing = 1 * 60; // Gwangcoin: 1 minutes
-static const int64 nInterval = nTargetTimespan / nTargetSpacing;
+static const int64 nInterval = nTargetTimespan / nTargetSpacing; // 720 block time
 
 //
 // minimum amount of work that could possibly be required nTime after
