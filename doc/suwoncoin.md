@@ -8,7 +8,7 @@ src/base58.h
 public:
     enum
     {
-        PUBKEY_ADDRESS = 125, // Suwoncoin addresses start with s
+        PUBKEY_ADDRESS = 125, // Gwangcoin addresses start with s
 
         SCRIPT_ADDRESS = 5,
         PUBKEY_ADDRESS_TEST = 111,

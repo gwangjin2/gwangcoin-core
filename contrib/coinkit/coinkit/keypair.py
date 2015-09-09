@@ -214,7 +214,7 @@ class VertcoinKeypair(BitcoinKeypair):
 class ReddcoinKeypair(BitcoinKeypair):
     _pubkeyhash_version_byte = 61
 
-class SuwoncoinKeypair(BitcoinKeypair):
+class GwangcoinKeypair(BitcoinKeypair):
     _pubkeyhash_version_byte = 125
 
 # TO DO:

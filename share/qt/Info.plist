@@ -15,16 +15,16 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Suwoncoin-Qt</string>
+	<string>Gwangcoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.gwangcoin.Suwoncoin-Qt</string>
+	<string>org.gwangcoin.Gwangcoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.gwangcoin.SuwoncoinPayment</string>
+            <string>org.gwangcoin.GwangcoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
               <string>gwangcoin</string>

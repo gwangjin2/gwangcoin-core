@@ -20,14 +20,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Suwoncoin"
-            VALUE "FileDescription",    "Suwoncoin-Qt (OSS GUI client for Suwoncoin)"
+            VALUE "CompanyName",        "Gwangcoin"
+            VALUE "FileDescription",    "Gwangcoin-Qt (OSS GUI client for Gwangcoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "gwangcoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "gwangcoin-qt.exe"
-            VALUE "ProductName",        "Suwoncoin-Qt"
+            VALUE "ProductName",        "Gwangcoin-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -1,9 +1,9 @@
-Building Suwoncoin
+Building Gwangcoin
 
-See doc/readme-qt.rst for instructions on building Suwoncoin-Qt,
+See doc/readme-qt.rst for instructions on building Gwangcoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Suwoncoin.
+implementation of Gwangcoin.
 
 See doc/build-*.txt for instructions on building gwangcoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Suwoncoin.
+implementation of Gwangcoin.

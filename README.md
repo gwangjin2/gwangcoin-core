@@ -5,7 +5,7 @@ http://www.gwangmoney.money
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
-Copyright (c) 2014-2015 Suwoncoin Developers
+Copyright (c) 2014-2015 Gwangcoin Developers
 Copyright (c) 2015-     gwcoin Developers
 
 광진마을화폐는 ?
@@ -17,8 +17,8 @@ Copyright (c) 2015-     gwcoin Developers
   -  마이닝 없음(초기 블럭에서 10억코인 생성)
   -  화폐총량: 10억 코인
   -  출금확인: 5분.
-  - 블록당 발행량 0 코인
-  - 난위도 조절 간격(retarget difficulty) 2016 blocks
+  -  10블럵 이후 블록당 발행량 0 코인
+  -  난위도 조절 간격(retarget difficulty) 2016 blocks
 
 For more information, as well as an immediately useable, binary version of
 the gwangmoney.com client sofware, see http://www.gwangmoney.com.
@@ -35,7 +35,7 @@ Development process
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Suwoncoin
+If it is a simple/trivial/non-controversial change, then one of the Gwangcoin
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch

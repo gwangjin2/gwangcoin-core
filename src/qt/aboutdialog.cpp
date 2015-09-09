@@ -26,7 +26,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
                                 tr("2011-%1 The Litecoin developers").arg(ABOUTDIALOG_COPYRIGHT_YEAR) +
                                 QString("<br>") +
                                 tr("Copyright") + QString(" &copy; ") +
-                                tr("2014-%1 The Suwoncoin developers").arg(ABOUTDIALOG_COPYRIGHT_YEAR)
+                                tr("2014-%1 The Gwangcoin developers").arg(ABOUTDIALOG_COPYRIGHT_YEAR)
                                 );
 }
 

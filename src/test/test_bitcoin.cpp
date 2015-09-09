@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE Suwoncoin Test Suite
+#define BOOST_TEST_MODULE Gwangcoin Test Suite
 #include <boost/test/unit_test.hpp>
 #include <boost/filesystem.hpp>
 

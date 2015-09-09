@@ -18,7 +18,7 @@ using namespace std;
 ~/Projects/gwangcoin/contrib/pycoin $ ku -nSWC 1
 
 input                          : 1
-network                        : Suwoncoin mainnet
+network                        : Gwangcoin mainnet
 netcode                        : SWC
 secret exponent                : 1
  hex                           : 1
@@ -34,13 +34,13 @@ key pair as sec                : 0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce2
                                    483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8
 hash160                        : 751e76e8199196d454941c45d1b3a323f1433bd6
  uncompressed                  : 91b24bf9f5288532960ac687abb035127b1d28a5
-Suwoncoin address              : sUvfdj9d7cnHNVcpHDkASXSKoAeTsKojEm
-Suwoncoin address uncompressed : sXXmeff54XxS9YfnPVmxNu5PPojcrHpixP
+Gwangcoin address              : sUvfdj9d7cnHNVcpHDkASXSKoAeTsKojEm
+Gwangcoin address uncompressed : sXXmeff54XxS9YfnPVmxNu5PPojcrHpixP
 
 
 ~/Projects/gwangcoin/contrib/pycoin $ ku -nSWC 2
 input                          : 2
-network                        : Suwoncoin mainnet
+network                        : Gwangcoin mainnet
 netcode                        : SWC
 secret exponent                : 2
  hex                           : 2
@@ -56,8 +56,8 @@ key pair as sec                : 02c6047f9441ed7d6d3045406e95c07cd85c778e4b8cef3
                                    1ae168fea63dc339a3c58419466ceaeef7f632653266d0e1236431a950cfe52a
 hash160                        : 06afd46bcdfd22ef94ac122aa11f241244a37ecc
  uncompressed                  : d6c8e828c1eca1bba065e1b83e1dc2a36e387a42
-Suwoncoin address              : sJrkmbH9318FAcZPw2DatoBUd3qvCt6D55
-Suwoncoin address uncompressed : sdq5Mt131X81FgRgRj8gHihsw7fMS1MFu8
+Gwangcoin address              : sJrkmbH9318FAcZPw2DatoBUd3qvCt6D55
+Gwangcoin address uncompressed : sdq5Mt131X81FgRgRj8gHihsw7fMS1MFu8
 
 */
 

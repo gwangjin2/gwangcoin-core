@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from coinkit import SuwoncoinKeypair
+from coinkit import GwangcoinKeypair
 
 
 for i in range(10):
-	p = SuwoncoinKeypair()
+	p = GwangcoinKeypair()
 	print "private key: \t"+ p.private_key()
 	print "public key: \t" + p.public_key()
 	print "hash160: \t" + p.hash160()

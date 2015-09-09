@@ -17,7 +17,7 @@ src/test_gwangcoin
 *.qm
 Makefile
 gwangcoin-qt
-Suwoncoin-Qt.app
+Gwangcoin-Qt.app
 
 # Unit-tests
 Makefile.test

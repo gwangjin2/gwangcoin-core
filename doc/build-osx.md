@@ -160,7 +160,7 @@ for a fix. Some ports also seem to obey either `build_arch` or
 on an OS X 10.6 64-bit machine fails. Official release builds of Litecoin-Qt are
 compiled on an OS X 10.6 32-bit machine to workaround that problem.
 
-Once dependencies are compiled, creating `Suwoncoin-Qt.app` is easy:
+Once dependencies are compiled, creating `Gwangcoin-Qt.app` is easy:
 
     make -f Makefile.osx RELEASE=1
 
@@ -173,8 +173,8 @@ directory. We have to first create the RPC configuration file, though.
 Run `./gwangcoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=gwangcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Suwoncoin/gwangcoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Suwoncoin/gwangcoin.conf"
+    echo -e "rpcuser=gwangcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Gwangcoin/gwangcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Gwangcoin/gwangcoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours.

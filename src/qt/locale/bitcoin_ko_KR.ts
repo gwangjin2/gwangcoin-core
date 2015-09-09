@@ -50,11 +50,11 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Suwoncoin&lt;/span&gt; version&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Gwangcoin&lt;/span&gt; version&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>2014-%1 The Suwoncoin developers</source>
+        <source>2014-%1 The Gwangcoin developers</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -198,11 +198,11 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
         <translation type="unfinished">%1 파일에 기록할 수 없음.</translation>
     </message>
     <message>
-        <source>These are your Suwoncoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Gwangcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">이것이 수원코인 금액을 보내는 주소이다. 항상 코인을 보내기전에 잔고와 받는 주소를 확인하시오.</translation>
     </message>
     <message>
-        <source>These are your Suwoncoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Gwangcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation type="unfinished">수코인을 받을 수 있는 계좌 주소입니다. 매 거래마다 새로운 주소 사용을 권장합니다. </translation>
     </message>
 </context>
@@ -332,7 +332,7 @@ MIT/X11 프로그램 라이선스에 따라 배포합니다. COPYING 또는 http
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Suwoncoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your gwangcoins from being stolen by malware infecting your computer.</source>
+        <source>Gwangcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your gwangcoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -673,49 +673,49 @@ Address: %4
         <translation type="unfinished">URI 조작중</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Suwoncoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Gwangcoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Suwoncoin</source>
+        <source>Gwangcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Send coins to a Suwoncoin address</source>
+        <source>Send coins to a Gwangcoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;About Suwoncoin</source>
+        <source>&amp;About Gwangcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show information about Suwoncoin</source>
+        <source>Show information about Gwangcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Modify configuration options for Suwoncoin</source>
+        <source>Modify configuration options for Gwangcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Sign messages with your Suwoncoin addresses to prove you own them</source>
+        <source>Sign messages with your Gwangcoin addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Suwoncoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Gwangcoin addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Suwoncoin client</source>
+        <source>Gwangcoin client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Suwoncoin network</source>
+        <source>%n active connection(s) to Gwangcoin network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Suwoncoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Gwangcoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1042,7 +1042,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Suwoncoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Gwangcoin address.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1072,7 +1072,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <source>Suwoncoin-Qt</source>
+        <source>Gwangcoin-Qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1476,11 +1476,11 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished">경고</translation>
     </message>
     <message>
-        <source>&amp;Start Suwoncoin on system login</source>
+        <source>&amp;Start Gwangcoin on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Suwoncoin.</source>
+        <source>This setting will take effect after restarting Gwangcoin.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1858,23 +1858,23 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Suwoncoin - Debug window</source>
+        <source>Gwangcoin - Debug window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Suwoncoin Core</source>
+        <source>Gwangcoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Open the Suwoncoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Gwangcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show the Suwoncoin-Qt help message to get a list with possible Suwoncoin command-line options.</source>
+        <source>Show the Gwangcoin-Qt help message to get a list with possible Gwangcoin command-line options.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Welcome to the Suwoncoin RPC console.</source>
+        <source>Welcome to the Gwangcoin RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2266,7 +2266,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter a Suwoncoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Gwangcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2353,7 +2353,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter a Suwoncoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Gwangcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2531,11 +2531,11 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter a Suwoncoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Gwangcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter Suwoncoin signature</source>
+        <source>Enter Gwangcoin signature</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2562,7 +2562,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The Suwoncoin developers</source>
+        <source>The Gwangcoin developers</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3834,32 +3834,32 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Suwoncoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Gwangcoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Suwoncoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Gwangcoin is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Suwoncoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Gwangcoin is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Suwoncoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Gwangcoin will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Suwoncoin version</source>
+        <source>Gwangcoin version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Suwoncoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Gwangcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>SSL options: (see the Suwoncoin Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the Gwangcoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3875,7 +3875,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Suwoncoin Alert&quot; admin@fo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Suwoncoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Gwangcoin to complete</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

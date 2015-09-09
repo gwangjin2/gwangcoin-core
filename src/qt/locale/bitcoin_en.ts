@@ -1049,8 +1049,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+502"/>
         <location line="+12"/>
-        <source>Suwoncoin-Qt</source>
-        <translation>Suwoncoin-Qt</translation>
+        <source>Gwangcoin-Qt</source>
+        <translation>Gwangcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1537,8 +1537,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Suwoncoin-Qt help message to get a list with possible Litecoin command-line options.</source>
-        <translation>Show the Suwoncoin-Qt help message to get a list with possible Litecoin command-line options.</translation>
+        <source>Show the Gwangcoin-Qt help message to get a list with possible Litecoin command-line options.</source>
+        <translation>Show the Gwangcoin-Qt help message to get a list with possible Litecoin command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
