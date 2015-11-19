@@ -55,9 +55,14 @@ Licenses of statically linked libraries:
 
 Dependency Build Instructions: Ubuntu 10.14 for aws.amazone
 -----------------------------------------------------------
+#all-in-one solution:
+	sudo add-apt-repository ppa:bitcoin/bitcoin
+	sudo apt-get update
+	sudo apt-get install build-essential clang libssl-dev libboost-all-dev libdb4.8-dev libdb4.8++-dev git libminiupnpc-dev 
+
 #Build requirements:
 
-sudo apt-get install build-essential
+	sudo apt-get install build-essential
 
 # clang/clang++ package
 	sudo apt-get install clang
